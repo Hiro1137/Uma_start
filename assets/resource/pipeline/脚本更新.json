@@ -10,7 +10,10 @@
             277,
             107
         ],
-        "action": "Click"
+        "action": "Click",
+        "next": [
+            "脚本更新中"
+        ]
     },
     "脚本更新中": {
         "recognition": "OCR",
