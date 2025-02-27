@@ -21,6 +21,25 @@
         "pre_delay": 5000,
         "action": "Click",
         "next": [
+            "启动加速2",
+            "检测加速已启动"
+        ]
+    },
+    "启动加速2": {
+        "recognition": "OCR",
+        "expected": [
+            "日服"
+        ],
+        "roi": [
+            500,
+            177,
+            186,
+            456
+        ],
+        "pre_delay": 5000,
+        "action": "Click",
+        "next": [
+            "启动加速",
             "检测加速已启动"
         ]
     },
