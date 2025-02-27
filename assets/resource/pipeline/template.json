@@ -1,0 +1,154 @@
+{
+    "打开uu": {
+        "action": "StartApp",
+        "package": "com.netease.uu",
+        "timeout": 5000,
+        "next": [
+            "启动加速"
+        ]
+    },
+    "启动加速": {
+        "recognition": "OCR",
+        "expected": [
+            "日服"
+        ],
+        "roi": [
+            500,
+            177,
+            186,
+            456
+        ],
+        "pre_delay": 5000,
+        "action": "Click",
+        "next": [
+            "检测加速已启动"
+        ]
+    },
+    "检测加速已启动": {
+        "recognition": "OCR",
+        "expected": [
+            "加速技术"
+        ],
+        "roi": [
+            26,
+            142,
+            669,
+            417
+        ],
+        "next": [
+            "返回桌面"
+        ]
+    },
+    "返回桌面": {
+        "action": "Key",
+        "key": 3,
+        "next": [
+            "检测桌面"
+        ]
+    },
+    "检测桌面": {
+        "recognition": "OCR",
+        "expected": [
+            "UU加速器"
+        ],
+        "roi": [
+            351,
+            347,
+            191,
+            212
+        ],
+        "next": [
+            "启动赛马娘助手"
+        ]
+    },
+    "启动赛马娘助手": {
+        "action": "StartApp",
+        "package": "com.qyzs.smn2",
+        "next": [
+            "检测助手按钮"
+        ]
+    },
+    "检测助手按钮": {
+        "recognition": "TemplateMatch",
+        "template": "助手.jpg",
+        "roi": [
+            597,
+            40,
+            122,
+            1090
+        ],
+        "timeout": 20000,
+        "next": [
+            "开始脚本1"
+        ]
+    },
+    "开始脚本1": {
+        "action": "Swipe",
+        "begin": [
+            338,
+            10,
+            1,
+            1
+        ],
+        "end": [
+            342,
+            512,
+            1,
+            1
+        ],
+        "next": [
+            "开始脚本2"
+        ]
+    },
+    "开始脚本2": {
+        "recognition": "TemplateMatch",
+        "template": "助手2.jpg",
+        "roi": [
+            578,
+            261,
+            136,
+            120
+        ],
+        "action": "Click",
+        "next": [
+            "开始脚本3"
+        ]
+    },
+    "开始脚本3": {
+        "recognition": "OCR",
+        "expected": [
+            "开始运行"
+        ],
+        "roi": [
+            14,
+            974,
+            705,
+            305
+        ],
+        "action": "Click",
+        "next": [
+            "返回桌面2"
+        ]
+    },
+    "返回桌面2": {
+        "action": "Key",
+        "key": 3,
+        "next": [
+            "脚本更新",
+            "开始脚本4"
+        ]
+    },
+    "开始脚本4": {
+        "recognition": "OCR",
+        "expected": [
+            "继续"
+        ],
+        "roi": [
+            381,
+            1167,
+            277,
+            89
+        ],
+        "action": "Click"
+    }
+}
