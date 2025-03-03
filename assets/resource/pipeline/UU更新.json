@@ -1,5 +1,50 @@
 {
-    "UU启动有更新":{    
-        "recognition":""
+    "UU启动有更新": {
+        "recognition": "OCR",
+        "expected": [
+            "立即更新"
+        ],
+        "roi": [
+            36,
+            1025,
+            683,
+            254
+        ],
+        "action": "Click",
+        "next": [
+            "下载完成安装"
+        ]
+    },
+    "下载完成安装": {
+        "recognition": "OCR",
+        "expected": [
+            "安装"
+        ],
+        "roi": [
+            417,
+            1144,
+            291,
+            124
+        ],
+        "action": "Click",
+        "next": [
+            "安装完成打开"
+        ]
+    },
+    "安装完成打开": {
+        "recognition": "OCR",
+        "expected": [
+            "打开"
+        ],
+        "roi": [
+            440,
+            1171,
+            265,
+            89
+        ],
+        "action": "Click",
+        "next": [
+            "启动加速"
+        ]
     }
 }

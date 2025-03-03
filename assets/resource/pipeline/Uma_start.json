@@ -4,6 +4,7 @@
         "package": "com.netease.uu",
         "timeout": 5000,
         "next": [
+            "UU启动有更新",
             "启动加速"
         ]
     },
