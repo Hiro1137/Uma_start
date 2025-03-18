@@ -1,0 +1,72 @@
+{
+    "打开apkupdater": {
+        "action": "StartApp",
+        "package": "com.apkupdater.ci",
+        "timeout": 5000,
+        "next": [
+            "切换到更新tab"
+        ]
+    },
+    "切换到更新tab": {
+        "recognition": "OCR",
+        "expected": [
+            "更新"
+        ],
+        "roi": [
+            40,
+            1192,
+            662,
+            75
+        ],
+        "action": "Click",
+        "next": [
+            "更新应用"
+        ],
+        "on_error": [
+            "无应用更新"
+        ]
+    },
+    "更新应用": {
+        "recognition": "OCR",
+        "expected": [
+            "安装应用"
+        ],
+        "roi": [
+            428,
+            184,
+            289,
+            927
+        ],
+        "action": "Click",
+        "timeout": 20000,
+        "next": [
+            "安装应用2"
+        ],
+        "on_error": [
+            "无应用更新"
+        ]
+    },
+    "安装应用2": {
+        "recognition": "OCR",
+        "expected": [
+            "安装"
+        ],
+        "roi": [
+            417,
+            1144,
+            291,
+            124
+        ],
+        "action": "Click",
+        "next": [
+            "更新应用"
+        ]
+    },
+    "无应用更新": {
+        "action": "Key",
+        "key": 3,
+        "next": [
+            "打开uu"
+        ]
+    }
+}
