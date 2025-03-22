@@ -124,10 +124,10 @@
         "recognition": "TemplateMatch",
         "template": "助手2.jpg",
         "roi": [
-            578,
-            261,
-            136,
-            120
+            574,
+            430,
+            128,
+            117
         ],
         "action": "Click",
         "next": [
