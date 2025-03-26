@@ -38,7 +38,7 @@
             927
         ],
         "action": "Click",
-        "timeout": 20000,
+        "timeout": 300000,
         "next": [
             "安装应用2",
             "安装应用2_alt"
@@ -59,13 +59,13 @@
             124
         ],
         "action": "Click",
+        "timeout": 300000,
         "next": [
             "更新应用"
         ],
         "on_error": [
             "无应用更新"
-        ],
-        "timeout": 200000
+        ]
     },
     "安装应用2_alt": {
         "recognition": "OCR",
