@@ -40,7 +40,8 @@
         "action": "Click",
         "timeout": 20000,
         "next": [
-            "安装应用2"
+            "安装应用2",
+            "安装应用2_alt"
         ],
         "on_error": [
             "无应用更新"
@@ -63,6 +64,58 @@
         ],
         "on_error": [
             "无应用更新"
+        ],
+        "timeout": 200000
+    },
+    "安装应用2_alt": {
+        "recognition": "OCR",
+        "expected": [
+            "已了解"
+        ],
+        "roi": [
+            284,
+            996,
+            177,
+            33
+        ],
+        "action": "Click",
+        "target": [
+            270,
+            1011,
+            9,
+            7
+        ],
+        "next": [
+            "安装应用3_alt"
+        ]
+    },
+    "安装应用3_alt": {
+        "action": "Click",
+        "target": [
+            312,
+            1115,
+            103,
+            43
+        ],
+        "next": [
+            "安装应用4_alt"
+        ]
+    },
+    "安装应用4_alt": {
+        "recognition": "OCR",
+        "expected": [
+            "安装成功"
+        ],
+        "roi": [
+            282,
+            792,
+            159,
+            54
+        ],
+        "action": "Key",
+        "key": 3,
+        "next": [
+            "打开uu"
         ]
     },
     "无应用更新": {
